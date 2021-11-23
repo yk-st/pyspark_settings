@@ -1,5 +1,5 @@
 # pyspark_settings
-pysparkの設定をまとめています
+pysparkをローカル環境で楽しむための設定をまとめています
 
 以下のUdemyコースで有効です
 1. 「データサイエンスのための前処理入門PythonとSparkで学ぶビッグデータエンジニアリング(PySpark) 速習講座」
