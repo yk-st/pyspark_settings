@@ -27,7 +27,8 @@ RUN tar -xzvf spark-3.2.0-bin-hadoop3.2.tgz
 
 RUN sudo apt install -y vim
 
-RUN sudo mkdir -p /tmp/spark-events
+RUN sudo mkdir -p /tmp/spark-events 
+RUN sudo chmod 777 -R /tmp/spark-events
 
 USER pyspark
 RUN echo "export SPARK_HOME=/home/pyspark/spark-3.2.0-bin-hadoop3.2/" >> ~/.bashrc
