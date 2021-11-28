@@ -35,3 +35,21 @@ RUN echo "export SPARK_HOME=/home/pyspark/spark-3.2.0-bin-hadoop3.2/" >> ~/.bash
 RUN echo "export PATH=${PATH}:/home/pyspark/spark-3.2.0-bin-hadoop3.2/bin" >> ~/.bashrc
 
 RUN git clone https://github.com/yk-st/pyspark_batch
+
+### Mysql
+# FROM mysql/mysql-server:5.7
+# RUN yum install -y sudo 
+# RUN yum install -y tar
+# RUN yum install -y procps-ng
+
+# RUN echo pyspark ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/pyspark\
+#     && chmod 0440 /etc/sudoers.d/pyspark
+
+# RUN sudo mkdir -p /home/pyspark
+# RUN sudo chmod 777 -R /home/pyspark
+# RUN groupadd pyspark
+
+# RUN useradd -s /bin/bash pyspark -g pyspark
+
+# ENV MYSQL_ROOT_PASSWORD=root 
+# ENV MYSQL_DATABASE: dbname
