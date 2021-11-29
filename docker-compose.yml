@@ -1,0 +1,30 @@
+version: '3'
+services:
+  mysql:
+    platform: linux/x86_64
+    image: mysql:5.7
+    volumes:
+      - ./mysql/data:/var/lib/mysql
+      - ./hiveddls:/docker-entrypoint-initdb.d
+      - ./share/my.cnf:/etc/mysql/conf.d/my.cnf
+    restart: always
+    environment:
+      MYSQL_DATABASE: metastore
+      MYSQL_ROOT_PASSWORD: root
+    container_name: db_mysql
+    ports:
+      - "3306:3306"
+    networks:
+      - app-net
+  workspace:
+    build: ./
+    command: sleep infinity
+    depends_on:
+      - mysql
+    container_name: pyspark
+    networks:
+      - app-net
+
+networks:
+  app-net:
+    driver: bridge

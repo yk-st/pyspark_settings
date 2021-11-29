@@ -1,7 +1,7 @@
 {
 	"name": "pyspark", // コンテナ表示名
-    "dockerFile": "../Dockerfile",
-	"service": "dev", // Docker Composeの接続サービス名
+    "dockerComposeFile": "../docker-compose.yml",
+	"service": "workspace", // Docker Composeのサービス名
 	"remoteUser": "pyspark", // デフォルトユーザをrootから切り替える
 	"workspaceFolder": "/home/pyspark", // Workspaceのフォルダを指定
 	"extensions": [ // コンテナ内でインストールするVS Codeの拡張機能ID
@@ -12,6 +12,7 @@
         "ms-toolsai.jupyter",
         "alphabotsec.vscode-eclipse-keybindings"
 	],
+	"shutdownAction": "stopCompose",
 	"settings": { // コンテナ内に追加するVS Codeの設定
 		"python.linting.pylintEnabled": false,
 		"python.linting.flake8Enabled": true,

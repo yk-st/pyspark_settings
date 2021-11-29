@@ -1,3 +1,12 @@
+set character_set_client = utf8;
+set character_set_connection = utf8;
+set character_set_database = utf8;
+set character_set_filesystem = utf8;
+set character_set_results = utf8;
+set character_set_server = utf8;
+Create database if not EXISTS metastore CHARACTER SET utf8;
+use metastore;
+
 -- Licensed to the Apache Software Foundation (ASF) under one or more
 -- contributor license agreements.  See the NOTICE file distributed with
 -- this work for additional information regarding copyright ownership.
