@@ -1,4 +1,4 @@
-# pyspark_settings
+# pysparkの設定
 pysparkをローカル環境で楽しむための設定をまとめています。  
 
 ## setting.ipynb(build by your-self)
