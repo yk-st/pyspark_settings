@@ -12,7 +12,7 @@ https://www.udemy.com/course/python-spark-pyspark/?referralCode=E67BF8B61F658667
 2. 「【PythonとSparkで始めるデータマネジメント入門】 ビッグデータレイクのための統合メタデータ管理入門」
 https://www.udemy.com/course/draft/4367192/?referralCode=AB48AD18D10E55DCB0E5
 
-## コンテナ環境で作成したい
+## コンテナ環境で作成したい(Docker.ipynb)
 Docker.ipynbを参照ください。VsCodeとコンテナを接続しながら作業を行います。
 コース内の解説では簡易インストール「pip3 install pyspark」を実行していますが、本手順であれば不要です。
 
