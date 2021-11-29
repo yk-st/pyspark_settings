@@ -1,5 +1,5 @@
 # pysparkの設定
-pysparkをローカル環境で楽しむための設定をまとめています。  
+pysparkをローカル環境(vscode)で楽しむための設定をまとめています。  
 
 ## setting.ipynb(build by your-self)
 ご自身で環境設定を楽しみたい人向けです。
