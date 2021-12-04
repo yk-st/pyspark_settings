@@ -54,7 +54,13 @@ RUN tar -xzvf kafka_2.13-3.0.0.tgz
 
 RUN ln -s kafka_2.13-3.0.0 kafka
 
+RUN git clone https://github.com/edenhill/librdkafka.git
+WORKDIR /home/pyspark/librdkafka/
+RUN cd /home/pyspark/librdkafka/ && ./configure --install-deps
+RUN cd /home/pyspark/librdkafka/ && ./configure --prefix=/usr && make -j && sudo make install
+RUN pip install confluent-kafka==1.7.0
+
+WORKDIR /home/pyspark/
 RUN git clone https://github.com/yk-st/pyspark_batch
 RUN git clone https://github.com/yk-st/pyspark_datamanagement_metadata.git
-
-
+RUN git clone https://github.com/yk-st/pyspark_streaming.git
