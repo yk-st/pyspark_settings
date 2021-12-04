@@ -24,6 +24,18 @@ services:
     container_name: pyspark
     networks:
       - app-net
+  kafka:
+    build: ./kafka
+    command: /etc/rc.local/start_up.sh
+    container_name: kafka
+    networks:
+      - app-net
+  nodejs:
+    build: ./nodejs
+    command: node /usr/src/app/express.js
+    container_name: nodejs
+    networks:
+      - app-net
 
 networks:
   app-net:
