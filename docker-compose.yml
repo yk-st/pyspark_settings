@@ -12,8 +12,6 @@ services:
       MYSQL_DATABASE: metastore
       MYSQL_ROOT_PASSWORD: root
     container_name: db_mysql
-    ports:
-      - "3306:3306"
     networks:
       - app-net
   workspace:
@@ -26,7 +24,7 @@ services:
       - app-net
   kafka:
     build: ./kafka
-    command: /etc/rc.local/start_up.sh
+    command: sh /etc/rc.local/start_up.sh
     container_name: kafka
     networks:
       - app-net
