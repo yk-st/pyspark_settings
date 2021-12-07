@@ -9,17 +9,17 @@ const app = express();
 
 app.get('/done', (req, res) => {
     senddata('check_cart')
-    res.send('BOOTCAMP 1\n');
+    res.send('お買い上げどうも\n');
 });
 
 app.get('/cart', (req, res) => {
     senddata('add_cart')
-    res.send('BOOTCAMP 2\n');
+    res.send('カートに入りました\n');
 });
 
 app.get('/', (req, res) => {
     senddata('login')
-    res.send('Create Bootcamp\n');
+    res.send('ログインしました\n');
 });
 
 function senddata(action) {
@@ -31,9 +31,8 @@ function senddata(action) {
             topic: 'pyspark-topic3',
             messages: [
                 {
-                    "value": `{"name": 'yuki', "action": ${action}, "sendtime": ${Date.now()}}`
+                    "value": `{"name": 'yuki_${Date.now()}', "action": ${action}, "sendtime": ${Date.now()}}`
                 },
-
             ],
         })
 
