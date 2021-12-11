@@ -59,6 +59,7 @@ WORKDIR /home/pyspark/librdkafka/
 RUN cd /home/pyspark/librdkafka/ && ./configure --install-deps
 RUN cd /home/pyspark/librdkafka/ && ./configure --prefix=/usr && make -j && sudo make install
 RUN pip install confluent-kafka==1.7.0
+RUN pip install avro
 
 WORKDIR /home/pyspark/
 RUN git clone https://github.com/yk-st/pyspark_batch
