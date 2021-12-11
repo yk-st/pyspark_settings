@@ -31,7 +31,7 @@ function senddata(action) {
             topic: 'pyspark-topic3',
             messages: [
                 {
-                    "value": `{"name": 'yuki_${Date.now()}', "action": ${action}, "sendtime": ${Date.now()}}`
+                    "value": `{"name": "yuki_${Date.now()}", "action": "${action}", "sendtime": ${Date.now()}}`
                 },
             ],
         })
