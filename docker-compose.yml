@@ -12,8 +12,6 @@ services:
       MYSQL_DATABASE: metastore
       MYSQL_ROOT_PASSWORD: root
     container_name: db_mysql
-    ports:
-      - "3306:3306"
     networks:
       - app-net
   workspace:
@@ -22,6 +20,18 @@ services:
     depends_on:
       - mysql
     container_name: pyspark
+    networks:
+      - app-net
+  kafka:
+    build: ./kafka
+    command: sh /etc/rc.local/start_up.sh
+    container_name: kafka
+    networks:
+      - app-net
+  nodejs:
+    build: ./nodejs
+    command: node /usr/src/app/express.js
+    container_name: nodejs
     networks:
       - app-net
 
