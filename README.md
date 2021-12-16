@@ -25,6 +25,9 @@ https://www.udemy.com/course/python-spark-pyspark/?referralCode=E67BF8B61F658667
 2. **「【PythonとSparkで始めるデータマネジメント入門】 ビッグデータレイクのための統合メタデータ管理入門」**
 https://www.udemy.com/course/draft/4367192/?referralCode=AB48AD18D10E55DCB0E5
 
+3. **「【データサイエンスのためのストリーミング前処理入門　PythonとSparkで始めるビッグデータストリーミング処理入門」**
+https://www.udemy.com/course/python-spark-streaming/?referralCode=F5E3B429A5C47468BDAD
+
 ## ????
 
 # 更新履歴
