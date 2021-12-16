@@ -38,4 +38,5 @@ https://www.udemy.com/course/python-spark-streaming/?referralCode=F5E3B429A5C474
 5. 2021/11/23 : Log4jにおけるファイル出力のフォーマットを変更しました。環境構築の文言をより明確に記載するようにしました。
 6. 2021/11/26 : 適用可能なコースを追加しました。
 7. 2021/11/29 : Dockerの設定を追加しました
-8. 2021/11/30 : Dockenize
+8. 2021/11/30 : Dockernize
+9. 2021/12/16 : add streaming course
