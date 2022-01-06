@@ -62,8 +62,8 @@ RUN pip install confluent-kafka==1.7.0
 RUN pip install avro
 RUN pip install pdfminer.six
 RUN pip install pandas
-pip install openpyxl
-pip install xlrd
+RUN pip install openpyxl
+RUN pip install xlrd
 
 WORKDIR /home/pyspark/
 RUN git clone https://github.com/yk-st/pyspark_batch
