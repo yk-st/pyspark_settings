@@ -59,9 +59,14 @@ WORKDIR /home/pyspark/librdkafka/
 RUN cd /home/pyspark/librdkafka/ && ./configure --install-deps
 RUN cd /home/pyspark/librdkafka/ && ./configure --prefix=/usr && make -j && sudo make install
 RUN pip install confluent-kafka==1.7.0
-RUN pip install avro
+RUN pip install avro==1.11.0
+RUN pip install pdfminer.six==20211012
+RUN pip install pandas==1.3.5
+RUN pip install openpyxl==3.0.9
+RUN pip install xlrd==2.0.1
 
 WORKDIR /home/pyspark/
 RUN git clone https://github.com/yk-st/pyspark_batch
 RUN git clone https://github.com/yk-st/pyspark_datamanagement_metadata.git
 RUN git clone https://github.com/yk-st/pyspark_streaming.git
+RUN git clone https://github.com/yk-st/pyspark_super_crush_course.git
