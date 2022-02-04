@@ -34,6 +34,11 @@ https://www.udemy.com/course/python-spark-streaming/?referralCode=F5E3B429A5C474
 4. **「超速入門!【データサイエンスへの最初の一歩】PythonとSparkで学ぶデータ分析のための前処理と分散処理 一気見講座」**
 https://www.udemy.com/course/draft/4415660/?referralCode=EF89D5D240FB483AF4A1
 
+# 補助教材
+
+エンジニアのための データ分析基盤入門 データ活用を促進する! プラットフォーム&データ品質の考え方. 
+https://amzn.to/34a0uPn
+
 # 更新履歴
 1. 2021/11/17 : first commit
 2. 2021/11/19 : JDBCドライバのバージョンをMysqlに合わせました。またlatin1になっていたのでUTF-8に統一しました。
