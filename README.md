@@ -35,6 +35,7 @@ https://www.udemy.com/course/python-spark-streaming/?referralCode=F5E3B429A5C474
 https://www.udemy.com/course/draft/4415660/?referralCode=EF89D5D240FB483AF4A1
 
 # 補助教材
+私の執筆した書籍もよろしくお願いいたします。
 
 エンジニアのための データ分析基盤入門 データ活用を促進する! プラットフォーム&データ品質の考え方
 
