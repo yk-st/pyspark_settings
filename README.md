@@ -23,6 +23,7 @@ Docker.ipynbを参照ください。VsCodeとコンテナを接続しながら�
 
 1. **「データサイエンスのための前処理入門PythonとSparkで学ぶビッグデータエンジニアリング(PySpark) 速習講座」**
 https://www.udemy.com/course/python-spark-pyspark/?referralCode=E67BF8B61F65866794EB
+
 ※コース内では簡易インストール(Dockerを用いないインストール)を用いた解説を行なっていますが、本手順でも大きな差はなく受講可能です。  
 
 2. **「【PythonとSparkで始めるデータマネジメント入門】 ビッグデータレイクのための統合メタデータ管理入門」**
