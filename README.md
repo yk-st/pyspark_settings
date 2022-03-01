@@ -53,3 +53,4 @@ https://amzn.to/34a0uPn
 8. 2021/11/30 : Dockernize
 9. 2021/12/16 : add streaming course
 10. 2022/01/07 : add super_pyspark_crush_course
+11. 2022/03/01 : Spark3.2.0のtgzが削除されていたので3.2.1に変更

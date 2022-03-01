@@ -41,7 +41,7 @@ RUN echo "export PATH=${PATH}:/home/pyspark/spark/bin" >> ~/.bashrc
 
 RUN wget https://downloads.mysql.com/archives/get/p/3/file/mysql-connector-java-5.1.49.tar.gz
 RUN tar -xzvf /home/pyspark/mysql-connector-java-5.1.49.tar.gz
-RUN mv /home/pyspark/mysql-connector-java-5.1.49/mysql-connector-java-5.1.49.jar /home/pyspark/spark/jars
+RUN sudo mv /home/pyspark/mysql-connector-java-5.1.49/mysql-connector-java-5.1.49.jar /home/pyspark/spark/jars
 
 COPY ./share/hive-site.xml /home/pyspark/spark/conf/
 COPY ./share/log4j.properties /home/pyspark/spark/conf/
