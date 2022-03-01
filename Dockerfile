@@ -23,8 +23,8 @@ RUN sudo apt install -y git
 
 WORKDIR /home/pyspark 
 
-RUN wget https://dlcdn.apache.org/spark/spark-3.2.0/spark-3.2.0-bin-hadoop3.2.tgz
-RUN tar -xzvf spark-3.2.0-bin-hadoop3.2.tgz 
+RUN wget https://dlcdn.apache.org/spark/spark-3.2.1/spark-3.2.1-bin-hadoop3.2.tgz
+RUN tar -xzvf spark-3.2.1-bin-hadoop3.2.tgz
 
 RUN sudo apt install -y vim
 
@@ -33,7 +33,7 @@ RUN sudo chmod 777 -R /tmp/spark-events
 RUN sudo mkdir /var/log/spark/
 RUN sudo chmod 777 -R /var/log/spark
 
-RUN sudo ln -s spark-3.2.0-bin-hadoop3.2 spark
+RUN sudo ln -s spark-3.2.1-bin-hadoop3.2 spark
 
 USER pyspark
 RUN echo "export SPARK_HOME=/home/pyspark/spark/" >> ~/.bashrc
