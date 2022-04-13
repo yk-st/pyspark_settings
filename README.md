@@ -54,3 +54,4 @@ https://amzn.to/34a0uPn
 9. 2021/12/16 : add streaming course
 10. 2022/01/07 : add super_pyspark_crush_course
 11. 2022/03/01 : Spark3.2.0のtgzが削除されていたので3.2.1に変更
+12. 2022/04/13 : Kafkaのバージョンの調整とvimを削除
