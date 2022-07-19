@@ -2,7 +2,9 @@ version: '3'
 services:
   mysql:
     platform: linux/x86_64
-    image: mysql:5.7
+    build:
+      context: mysql_build
+      dockerfile: Dockerfile
     volumes:
       - ./mysql/data:/var/lib/mysql
       - ./hiveddls:/docker-entrypoint-initdb.d
