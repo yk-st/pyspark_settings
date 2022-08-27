@@ -35,11 +35,12 @@ https://www.udemy.com/course/python-spark-streaming/?referralCode=F5E3B429A5C474
 4. **「超速入門!【データサイエンスへの最初の一歩】PythonとSparkで学ぶデータ分析のための前処理と分散処理 一気見講座」**
 https://www.udemy.com/course/draft/4415660/?referralCode=EF89D5D240FB483AF4A1
 
+5. **「【PythonとSparkで始めるデータマネジメント入門】 ビッグデータレイクのためのテーブルデータ品質管理入門」**
+https://www.udemy.com/course/draft/4774996/?referralCode=AD3E7A4EE4CAE4C7D221
+
 # 補助教材
 私の執筆した書籍もよろしくお願いいたします。
-
 エンジニアのための データ分析基盤入門 データ活用を促進する! プラットフォーム&データ品質の考え方
-
 https://amzn.to/34a0uPn
 
 # 更新履歴
@@ -56,4 +57,5 @@ https://amzn.to/34a0uPn
 11. 2022/03/01 : Spark3.2.0のtgzが削除されていたので3.2.1に変更
 12. 2022/04/13 : Kafkaのバージョンの調整とvimを削除
 13. 2022/07/20 : sparkのバージョンの調整3.2.2
-1. 2022/08/11 : mysqlのディレクトリを作成するように変更
+14. 2022/08/11 : mysqlのディレクトリを作成するように変更
+14. 2022/08/27 : 対象のコースとしてデータ品質コースを追加
