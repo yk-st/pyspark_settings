@@ -5,7 +5,7 @@ RUN apt-get update
 RUN apt-get install -y sudo
 
 # 以下の代わりに
-#RUN sudo apt install -y openjdk-11-jdk
+RUN sudo apt install -y openjdk-11-jdk
 
 # こちらをコメントイン
 #RUN wget https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.2_linux-x64_bin.tar.gz
