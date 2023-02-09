@@ -18,6 +18,8 @@ services:
       - app-net
   workspace:
     build: ./
+    # M1 macなどの場合のみ
+    #platform: linux/x86_64
     command: sleep infinity
     depends_on:
       - mysql
