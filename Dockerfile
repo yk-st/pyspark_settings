@@ -56,7 +56,8 @@ COPY ./share/log4j.properties /home/pyspark/spark/conf/
 COPY ./hiveddls/2.3.0_utf-8.sql /home/pyspark/
 COPY ./hiveddls/txn.sql /home/pyspark/
 
-RUN wget https://dlcdn.apache.org/kafka/3.0.2/kafka_2.13-3.0.2.tgz
+COPY ./kafka/kafka_2.13-3.0.2.tgz /home/pyspark/
+#RUN wget https://dlcdn.apache.org/kafka/3.0.2/kafka_2.13-3.0.2.tgz
 RUN tar -xzvf kafka_2.13-3.0.2.tgz
 
 RUN ln -s kafka_2.13-3.0.2 kafka
