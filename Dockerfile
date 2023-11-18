@@ -32,7 +32,7 @@ RUN sudo apt install -y git
 
 WORKDIR /home/pyspark 
 
-RUN wget https://dlcdn.apache.org/spark/spark-3.2.4/spark-3.2.4-bin-hadoop3.2.tgz
+RUN wget https://archive.apache.org/dist/spark/spark-3.2.4/spark-3.2.4-bin-hadoop3.2.tgz
 RUN tar -xzvf spark-3.2.4-bin-hadoop3.2.tgz
 
 RUN sudo mkdir -p /tmp/spark-events 
