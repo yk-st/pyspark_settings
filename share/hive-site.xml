@@ -1,7 +1,7 @@
 <configuration>
     <property>
-        <name>javax.jdo.option.ConnectionURL</name>
-        <value>jdbc:mysql://db_mysql/metastore?enabledTLSProtocols=TLSv1.2</value>
+        <name>com.mysql.cj.jdbc.Driver</name>
+        <value>jdbc:mysql://db_mysql/metastore</value>
     </property>
     <property>
         <name>javax.jdo.option.ConnectionDriverName</name>
