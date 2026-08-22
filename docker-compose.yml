@@ -6,8 +6,8 @@ services:
       context: mysql_build
       dockerfile: Dockerfile
     volumes:
-      - ./mysql/data:/var/lib/mysql
-      - ./hiveddls:/docker-entrypoint-initdb.d
+      #- ./mysql/data:/var/lib/mysql
+      #- ./hiveddls:/docker-entrypoint-initdb.d
       - ./share/my.cnf:/etc/mysql/conf.d/my.cnf
     restart: always
     environment:
